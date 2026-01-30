@@ -4,69 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rana Bot Pro</title>
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
-            color:white;
-            text-align:center;
-        }
-        header{
-            padding:20px;
-            font-size:28px;
-            font-weight:bold;
-            background:#00000050;
-        }
-        .container{
-            margin-top:60px;
-        }
-        button{
-            padding:15px 30px;
-            font-size:18px;
-            border:none;
-            border-radius:8px;
-            background:#00c6ff;
-            color:black;
-            cursor:pointer;
-            margin-top:20px;
-        }
-        .result{
-            margin-top:30px;
-            font-size:22px;
-            font-weight:bold;
-        }
-        footer{
-            position:fixed;
-            bottom:10px;
-            width:100%;
-            font-size:14px;
-            color:#ccc;
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>Rana Bot Pro - Smart Signal System</header>
+    <!-- Header -->
+    <header>Rana Bot Pro - Smart Signal System</header>
 
-<div class="container">
-    <h2>Market Signal Generator</h2>
-    <p>Click the button to generate a signal</p>
-    <button onclick="generateSignal()">Get Signal</button>
-    <div class="result" id="result"></div>
-</div>
+    <!-- Main Container -->
+    <div class="container">
+        <h2>Market Signal Generator</h2>
+        <p>Click the button to generate a signal</p>
+        <button onclick="generateSignal()">Get Signal</button>
+        <div class="result" id="result"></div>
+    </div>
 
-<footer>
-    © 2026 Rana Bot Pro | All Rights Reserved
-</footer>
+    <!-- Footer -->
+    <footer>
+        © 2026 Rana Bot Pro | All Rights Reserved
+    </footer>
 
-<script>
-function generateSignal(){
-    let signals = ["BUY 📈","SELL 📉","WAIT ⏳"];
-    let random = Math.floor(Math.random()*signals.length);
-    document.getElementById("result").innerText = signals[random];
-}
-</script>
-
+    <!-- External JS -->
+    <script src="script.js"></script>
 </body>
 </html>
